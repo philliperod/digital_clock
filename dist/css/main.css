@@ -19,11 +19,38 @@
 }
 
 .hand {
-  width: 50%;
-  height: 6px;
-  background: black;
   position: absolute;
   top: 50%;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+          box-shadow: inset 0 0 0 1px #fff;
+  background: black;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.46, 1.82, 0.74, 0.92);
+          transition-timing-function: cubic-bezier(0.46, 1.82, 0.74, 0.92);
+}
+
+.hour_hand {
+  width: 25%;
+  height: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.minute_hand {
+  width: 50%;
+  height: 6px;
+}
+
+.second_hand {
+  width: 55%;
+  height: 4px;
+  background: #ff6600e8;
 }
 
 body {
@@ -31,16 +58,19 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  font-family: "Playfair Display", serif;
   text-align: center;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  position: relative;
 }
