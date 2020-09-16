@@ -24,8 +24,7 @@
   background: black;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.46, 1.82, 0.74, 0.92);
+  transition: transform 0.5s;
 }
 
 .hour_hand {
@@ -42,4 +41,6 @@
   height: 4px;
   background: #ff6600e8;
   z-index: 30;
+
+  transition-timing-function: cubic-bezier(0.46, 1.82, 0.74, 0.92);
 }
