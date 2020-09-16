@@ -21,11 +21,12 @@
 .hand {
   position: absolute;
   top: 50%;
+  width: 50%;
   -webkit-box-shadow: inset 0 0 0 1px #fff;
           box-shadow: inset 0 0 0 1px #fff;
   background: black;
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: all 0.5s;
@@ -35,22 +36,19 @@
 }
 
 .hour_hand {
-  width: 25%;
-  height: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 10px;
+  z-index: 10;
 }
 
 .minute_hand {
-  width: 50%;
   height: 6px;
+  z-index: 20;
 }
 
 .second_hand {
-  width: 55%;
   height: 4px;
   background: #ff6600e8;
+  z-index: 30;
 }
 
 body {
