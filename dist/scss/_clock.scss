@@ -24,7 +24,8 @@
   background: black;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: transform 0.5s;
+  animation: transform 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .hour_hand {

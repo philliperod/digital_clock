@@ -11,7 +11,7 @@ function currentTime() {
   hourHand.style.transform = `rotate(${hour_degrees}deg)`;
   minuteHand.style.transform = `rotate(${minute_degrees}deg)`;
   secondHand.style.transform = `rotate(${second_degrees}deg)`;
-  console.log(second);
+  console.log(hour + ':' + minute + ':' + second);
 }
 
 const hourHand = document.querySelector('.hour_hand');
